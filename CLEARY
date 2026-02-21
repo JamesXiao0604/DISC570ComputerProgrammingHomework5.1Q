@@ -29,3 +29,13 @@ match x:
         print("service temporarily overloaded")
     case 503:
         print("service unavailable")
+
+Question 3
+a = int(input("what is a? "))
+b = int(input("what is b? "))
+c = int(input("what is c? "))
+d = int(input("what is d? "))
+def f(a,b,c,d):
+    x = ((-b**3/(27*a**3)+b*c/(6*a**2)-d/(2*a))+((-b**3/(27*a**3)+b*c/6*a**2-d/2*a)**2+(c/3*a-(b**2)/(9*a**2))**3)**0.5)**(1/3)+((-b**3/(27*a**3)+b*c/(6*a**2)-d/(2*a))-((-b**3/(27*a**3)+b*c/6*a**2-d/2*a)**2+(c/3*a-(b**2)/(9*a**2))**3)**0.5)**(1/3)-b/(3*a)
+    return x.real
+print(f(a,b,c,d))
