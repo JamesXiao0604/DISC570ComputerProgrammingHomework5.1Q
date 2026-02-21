@@ -1,3 +1,4 @@
+# Question 1
 a = int(input("What is a? "))
 b = int(input("What is b? "))
 c = int(input("What is c? "))
@@ -8,3 +9,23 @@ def f2(a,b,c):
     y = (-b-(b**2-4*a*c)**1/2)/(2*a)
     return y
 print(f1(a,b,c), f2(a,b,c))
+
+# Question 2
+x = int(input("What is the errorcode? "))
+match x:
+    case 404:
+        print("page not found")
+    case 500:
+        print("internal server error")
+    case 401:
+        print("unauthorised")
+    case 400:
+        print("bad request")
+    case 403:
+        print("forbidden")
+    case 501:
+        print("not implemented")
+    case 502:
+        print("service temporarily overloaded")
+    case 503:
+        print("service unavailable")
